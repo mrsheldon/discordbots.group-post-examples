@@ -4,7 +4,7 @@ import aiohttp
 import async_timeout
 import json
 
-dbg_token='ur_token'
+dbg_token='your_token'
 
 async def fetchPost(urlIn, d, h):
     async with aiohttp.ClientSession() as session:
