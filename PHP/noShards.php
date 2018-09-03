@@ -14,7 +14,7 @@ curl_setopt($ch, CURLOPT_POST, 1);
 curl_setopt($ch, CURLOPT_POSTFIELDS, $botData);
 curl_setopt($ch, CURLOPT_HTTPHEADER, array(
     'Authorization: '.$AUTH,
-    'Content-Type: application/x-www-form-urlencoded'
+    'Content-Type: application/json'
 ));
 $result = curl_exec($ch);
 curl_close($ch);
