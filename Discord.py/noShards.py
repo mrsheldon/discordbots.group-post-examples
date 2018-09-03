@@ -16,7 +16,7 @@ async def fetchPost(urlIn, d, h):
 await postToDBG():
     headers = {
         'Authorization': dbg_token,
-        'Content-Type': 'application/x-www-form-urlencoded'
+        'Content-Type': 'application/json'
     }
     data = {"count": len(self.bot.guilds)}
     await fetchPost("https://discordbots.group/api/bot/{}".format(botID), data, headers)
