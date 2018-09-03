@@ -4,7 +4,7 @@ String token = "";
 JSONObject data = new JSONObject();
 data.put("count", jda.getGuilds().size());
 
-RequestBody body = RequestBody.create(MediaType.parse("application/x-www-form-urlencoded"), data.toString());
+RequestBody body = RequestBody.create(MediaType.parse("application/json"), data.toString());
 
 Request request = new Request.Builder()
         .url(url)
